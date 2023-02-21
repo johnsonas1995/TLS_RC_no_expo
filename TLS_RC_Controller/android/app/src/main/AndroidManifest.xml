@@ -2,8 +2,9 @@
   package="com.tls_rc_controller">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.BLUETOOTH" /> // required for bluetooth serial 
-    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" /> // required for bluetooth serial 
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> // required for bluetooth serial 
 
     <application
       android:name=".MainApplication"

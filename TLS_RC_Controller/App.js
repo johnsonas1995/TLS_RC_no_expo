@@ -18,7 +18,8 @@ import {
   useColorScheme,
   View,
   Button,
-  Image
+  Image,
+  NativeModules, DeviceEventEmitter, //bluetooth serial requirements
 } from 'react-native';
 
 import {
@@ -30,6 +31,7 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 import Slider from '@react-native-community/slider'
 import logo from './assets/tls_logo.jpg';    
+const BluetoothSerial = NativeModules.BluetoothSerial
 
 /* $FlowFixMe[missing-local-annot] The type annotation(s) required by Flow's
  * LTI update could not be added via codemod */
@@ -89,7 +91,7 @@ const App: () => Node = () => {
     
       
 
-      <Slider style={{width:200, height:40, alignSelf:'flex-end'}} //could use wheel picker instead
+      <Slider style={{width:200, height:40, alignSelf:'flex-end', color:"#40E0D0"}} //could use wheel picker instead
       minimumValue={-1} 
       maximumValue={1}
       onValueChange={(value) => setSteerVal(value)}
