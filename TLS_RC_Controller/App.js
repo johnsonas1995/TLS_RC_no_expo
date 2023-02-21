@@ -31,7 +31,10 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 import Slider from '@react-native-community/slider'
 import logo from './assets/tls_logo.jpg';    
+
 const BluetoothSerial = NativeModules.BluetoothSerial
+
+
 
 /* $FlowFixMe[missing-local-annot] The type annotation(s) required by Flow's
  * LTI update could not be added via codemod */
@@ -60,6 +63,8 @@ const Section = ({children, title}): Node => {
     </View>
   );
 };
+
+
 
 const App: () => Node = () => {
   const isDarkMode = useColorScheme() === 'dark';
